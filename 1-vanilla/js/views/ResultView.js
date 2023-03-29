@@ -21,6 +21,7 @@ ResultView.render = function (data = []) {
 ResultView.getSearchResultsHtml = function (data) {
     return data.reduce((html, item) => {
         html += this.getSearchItemHtml(item)
+        return html
     }, '<ul>') + '</ul>'
 }
 
